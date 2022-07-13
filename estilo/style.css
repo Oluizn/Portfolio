@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: white;
+    border-bottom: 1px solid white;
+    column-gap: 114px;
+}
+span {
+    color: red;
+}
+p, h2 {
+    font-size: 3vw;
+}
+h1 {
+    font-size: 7vw;
+}
+nav {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 10px;
+}
+section.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: #1F1F23;
+    color: white;
+    justify-content: center;
+}
+.redbar {
+    width: 95%;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    align-self: flex-end;
+    justify-self: center;
+}
+.btn-socialmidia {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+button {
+    background-color: red;
+    border-radius: 2px;
+    width: 220px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
