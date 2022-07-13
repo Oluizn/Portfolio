@@ -14,8 +14,12 @@ header {
     align-items: center;
     height: 50px;
     color: white;
-    border-bottom: 1px solid white;
     column-gap: 114px;
+}
+img {
+    width: 80px;
+    align-self: flex-start;
+    padding-top: 10px;
 }
 span {
     color: red;
@@ -48,6 +52,7 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px 10px;
+    margin-left: 40px;
 }
 section.conteiner {
     display: flex;
@@ -69,15 +74,31 @@ section.conteiner {
 }
 .btn-socialmidia {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    column-gap: 40px;
+    margin-top: 20px;
 }
 button {
-    background-color: red;
     border-radius: 2px;
+    color: white;
     width: 220px;
     height: 50px;
-    color: white;
     font-weight: bold;
     font-size: 2em;
+    cursor: pointer;
+    background-color: red;
+    background-image: linear-gradient(-60deg, transparent, transparent 40%, rgb(255, 83, 83) 40%, rgb(255, 83, 83) 60%, transparent 60%, transparent 100%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+    border-radius: 2px;
+    font-size: 1.5em;
+    transition: 300ms;
+}
+button:hover {
+    background-position-x: -150%;
+    transition: background-position-x 800ms;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.63);
+    transform: translate(-3px, -3px);
 }
