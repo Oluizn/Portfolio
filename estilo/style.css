@@ -16,7 +16,7 @@ header {
     color: white;
     column-gap: 114px;
 }
-img {
+img.logo {
     width: 80px;
     align-self: flex-start;
     padding-top: 10px;
@@ -25,10 +25,10 @@ span {
     color: red;
 }
 p, h2 {
-    font-size: 3vw;
+    font-size: 2em;
 }
 h1 {
-    font-size: 7vw;
+    font-size: 6em;
 }
 nav {
     font-size: 1.2em;
@@ -42,7 +42,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:space-between;
     background-color: black;
     color: white;
     flex-wrap: wrap;
@@ -51,16 +51,33 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0px 10px;
-    margin-left: 40px;
 }
 section.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #1F1F23;
     color: white;
 }
-
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    height: 280px;
+    text-align: justify;
+    
+    align-self: center;
+}
+aside > p {
+    font-size: 1.5em;
+}
+.avatar {
+    width: 200px;
+}
 /* .redbar {
     width: 95%;
     height: 5px;
@@ -91,11 +108,9 @@ button {
     background-position-x: 150%;
     border-radius: 2px;
     font-size: 1.5em;
-    transition: 300ms;
 }
 button:hover {
     background-position-x: -150%;
     transition: background-position-x 800ms;
     box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.63);
-    transform: translate(-3px, -3px);
 }
