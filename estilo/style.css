@@ -56,6 +56,7 @@ h3 {
     text-shadow: 4px 4px 6px rgb(0 0 0 / 60%);
     font-family: var(--font2);
     color: rgba(255, 255, 255, 0.925);
+    padding-top: 20px;
 
 }
 nav {
@@ -63,6 +64,24 @@ nav {
     display: flex;
     flex-direction: row;
     font-family: var(--font3);
+    column-gap: 10p;
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.925);
+}
+ul {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    list-style-position: ;
+}
+ul a {
+    transition: 400ms;
+}
+ul a:hover {
+    color: red;
+    transition: 400ms;
 }
 .main {
     width: 100%;
@@ -92,7 +111,7 @@ section.conteiner {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #1F1F23;
     color: white;
 }
@@ -176,8 +195,8 @@ aside > p {
     font-size: 2em;
 }
 .animation {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     padding: 10px;
     /* animation-name: animation-spin;
     animation-duration: 0.5s;
