@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiz</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/avatar.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
+
+            <!-- Cabeçalho -->
     <header>
-        <img src="imagens/js_css_html.png" alt="logo" class="logo">
+        <img src="imagens/OLuiz-p.png" alt="logo" class="logo">
         <nav>
             Sobre
             Habilidades
@@ -18,6 +20,9 @@
             Contato
         </nav>
     </header>
+
+            <!-- Página inicial -->
+
     <section class="main">
         <div class="name">
             <h2>Olá, meu nome é</h2>
@@ -33,16 +38,78 @@
             <img src="" alt="Foto">
         </div>
     </section>
-    <section id="sobre" class="conteiner">
-        <img class="avatar" src="imagens/avatar.png" alt="">
-        <aside>
-            <p>Me chamo Antonio Luiz Neto e sou apaixonado por tecnologia. Meu primeiro contato com programação foi durante a faculdade em 2018, no curso de engenharia de produção, curso que ainda estou fazendo.</p>
 
-            <p>Somente em 2022 comecei a aprofundar-me na área de desenvolvimento web e programação, e, dali em diante, decidi me dedicar a esta área e ser o melhor profissional que posso ser!</p>
-        </aside>
+        <!-- seções divididas por conteúdo -->
+            <!-- seção 1 com display flex collumn -->
+
+    <section id="sobre" class="conteiner">
+        <div>
+            <h3>Sobre mim</h1>
+        </div>
+
+                <!-- subdivisão com display flex row -->
+
+        <div class="conteiner-sobre">
+            <img class="avatar" src="imagens/avatar.png" alt="">
+            <aside>
+                <p>Me chamo Antonio Luiz Neto e sou apaixonado por tecnologia. Meu primeiro contato com programação foi durante a faculdade em 2018, no curso de engenharia de produção, curso que ainda estou fazendo.</p>
+                <p>Somente em 2022 comecei a aprofundar-me na área de desenvolvimento web e programação, e, dali em diante, decidi me dedicar a esta área e ser o melhor profissional que posso ser!</p>
+            </aside>
+        </div>
+        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
     </section>
-    <section id="habilidades" class="conteiner"></section>
-    <section id="projetos" class="conteiner"></section>
-    <section id="contato" class="conteiner"></section>
+
+            <!-- seção 2 com display flex collumn -->
+
+    <section id="habilidades" class="conteiner">
+        <h3>Habilidades</h3>
+
+                <!-- subdivisão com mais subdivisões com display flex row -->
+
+        <div class="conteiner-habilidades">
+            <div><img src="imagens/html5.png" alt="HTML5" class="icon-habilidades">
+            <p>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet</p></div>
+            <div><img src="imagens/css3.png" alt="CSS3" class="icon-habilidades">
+            <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web.</p></div>
+            <div><img src="imagens/js-icon-1-0.png" alt="JavaScript" class="icon-habilidades">
+            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p></div>
+            <div><img src="imagens/figma.png" alt="Figma" class="icon-habilidades">
+            <p>Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.</p></div>
+
+        </div>
+        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
+    </section>
+
+            <!-- seção 3 com display flex collumnn -->
+
+    <section id="projetos" class="conteiner">
+        <div>
+            <h3>Projetos</h1>
+        </div>
+        <div class="conteiner-projetos">
+            <a href="https://oluizn.github.io/projeto-android/" target="_blank"><img src="imagens/android.jpg" alt="Android" class="icon-projeto"></a>
+            <a href="https://oluizn.github.io/projeto-cordel/" target="_blank"><img src="imagens/cordel.jpg" alt="Cordel" class="icon-projeto"></a>
+            <a href="https://oluizn.github.io/projeto-social/" target="_blank"><img src="imagens/social media.jpg" alt="Social midia" class="icon-projeto"></a>
+            <a href="https://oluizn.github.io/projeto-tela-de-login/" target="_blank"><img src="imagens/login.jpg" alt="Login" class="icon-projeto"></a>
+        </div>
+        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
+    </section>
+
+            <!-- seção 4 com display flex collumn e inputs -->
+    <section id="contato" class="conteiner">
+        <div>
+            <h3>Contato</h1>
+        </div>
+        <div class="conteiner-contato"></div>
+
+        <!-- footer com links de redes sociais -->
+
+        <footer>
+            <a href="https://www.instagram.com/tluiz.n/" target="_blank"><img src="imagens/instagram-icon.jpg" class="icon-social" alt="Instagra"></a>
+            <a href="https://twitter.com/TonLuizNeto" target="_blank"><img src="imagens/twitter-icon.png" class="icon-social" alt="twitter"></a>
+            <a href="https://www.facebook.com/antonio.luiz.9480111" target="_blank"><img src="imagens/facebook-icon.png" class="icon-social" alt="facebook"></a>
+        </footer>
+    </section>
+    <!-- FIM DAS SEÇÕES E FIM DO PORTFÓLIO -->
 </body>
 </html>
