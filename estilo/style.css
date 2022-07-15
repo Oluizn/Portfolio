@@ -34,8 +34,16 @@ header {
     column-gap: 114px;
 }
 img.logo {
-    width: 75px;
+    width: 85px;
     border-radius: 50%;
+    background-color: black;
+    padding: 4px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.473);
+    transition: 400ms;
+}
+img.logo:hover {
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.719);
+    transition: 200ms;
 }
 span {
     color: red;
@@ -151,6 +159,9 @@ section.conteiner {
 }
 .icon-habilidades {
     width: 80px;
+} 
+.conteiner-habilidades  p {
+    font-size: 1.4em;
 }
 .conteiner-projetos {
     width: 100%;
@@ -221,7 +232,7 @@ aside > p {
     column-gap: 40px;
     margin-top: 20px;
 }
-button {
+button.btn-midia {
     border-radius: 2px;
     color: white;
     width: 220px;
@@ -239,7 +250,7 @@ button {
     font-family: var(--font1);
     font-size: 2em;
 }
-button:hover {
+button.btn-midia:hover {
     background-position-x: -150%;
     transition: background-position-x 800ms;
     box-shadow: 0px 0px 6px 1px rgba(226, 18, 18, 0.63);
@@ -247,6 +258,16 @@ button:hover {
 .icon-social {
     width: 25px;
     border-radius: 5px;
+}
+.icon-menu {
+    width: 50px;
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-icon {
+    display:
 }
 footer {
     display: flex;
@@ -262,4 +283,12 @@ footer {
 footer > p {
     font-family: var(--font3);
     font-size: 1em;
+}
+@media screen  and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
 }
