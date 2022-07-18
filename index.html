@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLuiz</title>
-    <link rel="shortcut icon" href="imagens/avatar.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
-            <!-- Cabeçalho -->
     <header>
-        <a href="#inicio" class="logo">O<span>Luiz</span></a>
-        <nav>
-            <ul class="nav-list">
+        <a href="#inicio"><strong>O<span>Luiz</strong></span></a>
+        <nav class="nav-list">
+            <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
@@ -22,22 +19,23 @@
             </ul>
         </nav>
     </header>
-
-        <!-- menu escondido par diferentes resoluções -->
-    <nav class="open-menu">
-        <a href="#inicio" class="logo">O<span>Luiz</span></a>
-        <ul class="nav-list">
+    <button onclick="menushow()" class="btn-open-menu">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </button>
+    <nav class="hidden-menu">
+        <ul>
+            <a href="#inicio"><strong>O<span>Luiz</strong></span></a>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-            <!-- Página inicial -->
-
-    <section id="inicio" class="main">
+    <section id="inicio" class="inicio">
         <div class="name">
-            <h2>Olá, meu nome é</h2>
+            <p>Olá, meu nome é</p>
             <h1>Antonio <span>Luiz</span></h1>
             <p>Estudante de desenvolvimento web <br> e
                 Programação.</p>
@@ -46,93 +44,73 @@
                 <button class="btn-midia"><a href="https://github.com/Oluizn" target="_blank">GitHub</a></button>
             </div>
         </div>
-
     </section>
-        <!-- seção sobre mim -->
     <section id="sobre" class="conteiner">
-
-
-        <div class="generica">
-            <h3>Sobre mim</h3>
-            <div class="conteiner-sobre">
-                <img class="animation" src="imagens/engrenagem.png" alt="">
-                <aside class="txt">
+        <div class="box">
+            <h1>Sobre mim</h1>
+            <div class="sub-box">
+                <img src="" alt="animação" class="animation">
+                <div class="txt">
                     <p>Me chamo Antonio Luiz Neto e sou apaixonado por tecnologia. Meu primeiro contato com programação foi durante a faculdade em 2018, no curso de engenharia de produção, curso que ainda estou fazendo.</p>
                     <p>Somente em 2022 comecei a aprofundar-me na área de desenvolvimento web e programação, e, dali em diante, decidi me dedicar a esta área e ser o melhor profissional que posso ser!</p>
-                </aside>
+                </div>
             </div>
         </div>
-        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
+        <div class="barra"></div>
     </section>
-
-            <!-- seção habilidades -->
-
     <section id="habilidades" class="conteiner">
-        
-
-        <div class="generica">
-            <h3>Habilidades</h3>
-            <div class="conteiner-habilidades">
-                <div>
+        <div class="box">
+            <h1>Habilidades</h1>
+            <div class="sub-box-2">
+                <div class="txt-habilidades">
                     <img src="imagens/html5.png" alt="HTML5" class="icon-habilidades">
                     <p>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet
 
                     </p>
                 </div>
-                <div>
+                <div class="txt-habilidades">
                     <img src="imagens/css3.png" alt="CSS3" class="icon-habilidades">
                     <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web.
 
                     </p>
                 </div>
-                <div>
+                <div class="txt-habilidades">
                     <img src="imagens/js-icon-1-0.png" alt="JavaScript" class="icon-habilidades">
                     <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
 
                     </p>
                 </div>
-                <div>
+                <div class="txt-habilidades">
                     <img src="imagens/figma.png" alt="Figma" class="icon-habilidades">
                     <p>Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
 
                     </p>
                 </div>
-                <div>
+                <div class="txt-habilidades">
                     <img src="imagens/github-icon.png" alt="github" class="icon-habilidades">
                     <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
 
                     </p>
                 </div>
-                <div>
-                    <img src="imagens/git-icon.png" alt="git" class="icon-habilidades">
-                    <p>Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software
-
-                    </p>
-                </div>
             </div>
-
         </div>
-        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
+        <div class="barra"></div>
     </section>
-
-                <!-- seção projetos -->
-
     <section id="projetos" class="conteiner">
-        <div class="generica">
-            <h3>Projetos</h3>
-            <div class="conteiner-projetos">
+        <div class="box">
+            <h1>Projetos</h1>
+            <div class="sub-box-2">
                 <a href="https://oluizn.github.io/projeto-android/" target="_blank"><img src="imagens/android.jpg" alt="Android" class="icon-projeto"></a>
                 <a href="https://oluizn.github.io/projeto-cordel/" target="_blank"><img src="imagens/cordel.jpg" alt="Cordel" class="icon-projeto"></a>
                 <a href="https://oluizn.github.io/projeto-social/" target="_blank"><img src="imagens/social media.jpg" alt="Social midia" class="icon-projeto"></a>
                 <a href="https://oluizn.github.io/projeto-tela-de-login/" target="_blank"><img src="imagens/login.jpg" alt="Login" class="icon-projeto"></a>
             </div>
         </div>
-        <div class="bar"></div> <!-- underline criada com uma div e justify-content space-between -->
+        <div class="barra"></div>
     </section>
-
-
     <footer id="contato">
-        <p>E-mail: antonioluiz_neto@hotmail.com; antonioluiz.n.eng@gmail.com
+        <p>
+            E-mail: antonioluiz_neto@hotmail.com; antonioluiz.n.eng@gmail.com
             <br>
             Feito por Antonio Luiz Neto. <br>
             Favicon south park: www.southparkstudios.com.br <br>
@@ -144,6 +122,7 @@
             <a href="https://www.facebook.com/antonio.luiz.9480111" target="_blank"><img src="imagens/facebook-icon.png" class="icon-social" alt="facebook"></a>
         </p>
     </footer>
-    <!-- FIM DAS SEÇÕES E FIM DO PORTFÓLIO -->
+    <script src="assets/script.js">
+    </script>
 </body>
 </html>
