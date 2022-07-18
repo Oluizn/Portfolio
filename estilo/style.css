@@ -98,11 +98,6 @@ ul a:hover {
     justify-content: flex-start;
     padding-left: 10px;
 }
-.name h1 {
-    transition-timing-function: ease-in;
-    transition-duration: 2s;
-    transition-delay: 200ms;
-}
 .generica {
     width: 100%;
     text-align: center;
