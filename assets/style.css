@@ -10,29 +10,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgba(255, 255, 255, 0.932);
+    
     text-decoration: none;
     scroll-behavior: smooth;
-}
-p {
-    font-family: var(--font3);
 }
 h1 {
     font-size: 8vh;
     font-family: var(--font2);
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.685);
-}
-header {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    border-bottom: 1px solid white;
-    background: rgba(196, 196, 196, 0.11);
-    backdrop-filter: blur(5px);
-    z-index: 2;
+    color: rgba(255, 255, 255, 0.932);
 }
 strong {
     font-weight: normal;
@@ -46,12 +32,14 @@ strong {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 10px;
+    color: rgba(255, 255, 255, 0.932);
 }
 .name > p  {
     animation: apresentacao .8s ease-in 1.5s forwards;
     color: rgba(255, 255, 255, 0.61); 
     font-size: 2em;
     opacity: 0;
+    font-family: var(--font3);
 }
 .name > h1 {
     animation: apresentacao .8s ease-in .4s forwards;
@@ -72,11 +60,9 @@ span {
     opacity: 0;
 }
 .btn-midia {
-    color: white;
     width: 220px;
     height: 50px;
     font-weight: bold;
-    font-size: 2em;
     cursor: pointer;
     border: none;
     background-color: red;
@@ -88,6 +74,9 @@ span {
     font-size: 1.5em;
     font-family: var(--font1);
     font-size: 2em;
+}
+.btn-midia > a {
+    color: rgba(255, 255, 255, 0.932);
 }
 .btn-midia:hover {
     background-position-x: -150%;
