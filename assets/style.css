@@ -50,29 +50,22 @@ strong {
     justify-content: flex-start;
     padding-left: 10px;
 }
-.p-first  {
-    animation: apresentacao .3s ease-in .2s forwards;
+.name > p  {
+    animation: apresentacao .8s ease-in 1.5s forwards;
     color: rgba(255, 255, 255, 0.61); 
     font-size: 2em;
     opacity: 0;
 }
 .name > h1 {
-    animation: apresentacao .3s ease-in 1s forwards;
+    animation: apresentacao .8s ease-in .4s forwards;
     font-size: 10vh;
     opacity: 0;
 }
-.p-second  {
-    animation: apresentacao .3s ease-in 2s forwards;
-    color: rgba(255, 255, 255, 0.61); 
-    font-size: 2em;
-    opacity: 0;
-}
-
 span {
     color: red;
 }
 .btn-socialmidia {
-    animation: apresentacao .5s ease-in 3s forwards;
+    animation: apresentacao .4s ease-in 2.5s forwards;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
