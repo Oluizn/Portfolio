@@ -22,9 +22,6 @@ h1 {
     font-family: var(--font2);
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.685);
 }
-body {
-    background: black;
-}
 header {
     position: fixed;
     display: flex;
