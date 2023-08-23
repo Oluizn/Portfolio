@@ -153,7 +153,7 @@ span {
     z-index: 0;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    background: linear-gradient(45deg, #fff000, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #fff000, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+    background: linear-gradient(45deg, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
     background-size: 300%;
     border-radius: 50%;
     animation: spin 15s infinite;
