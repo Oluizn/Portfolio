@@ -92,8 +92,109 @@ span {
     justify-content: center;
     align-items: center;
 }
+.downpage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1D1C1D;
+    box-shadow: 0px -7px 7px 0px #00000091;
+}
+.organizer {
+    padding-bottom: 130px;
+}
+.organizer h1{
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.932);
+    font-family: var(--font3);
+    text-shadow: none;
+    padding-bottom: 20px;
+}
+.organizer p{
+    color: rgba(207, 207, 207, 0.89);
+    font-family: var(--font3);
+    font-size: 1em;
+}
+.conteiner {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    min-height: 70vh;
+    background-color: #322E33;
+    border-radius: 6px;
+}
+.collum-div {
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.caixa {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #fff000, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #fff000, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+    background-size: 300%;
+    border-radius: 50%;
+    animation: spin 15s infinite;
+
+}
+.caixa::after {
+    filter: blur(10px);
+}
+.collum-div img {
+    width: 200px;
+    clip-path: circle(40%);
+    z-index: 1;
+}
+.collum-div h1 {
+    color: rgba(255, 255, 255, 0.89);
+    font-family: var(--font3);
+    font-size: 1.1em;
+    text-shadow: none;
+    padding-bottom: 40px;
+    text-indent: 30px;
+}
+.collum-div p{
+    color: rgba(207, 207, 207, 0.89);
+    font-family: var(--font3);
+    font-size: 1em;
+}
+.left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 50%;
+}
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 30%;
+}
 @keyframes apresentacao {
     to {
         opacity: 1;
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
