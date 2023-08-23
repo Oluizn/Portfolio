@@ -103,6 +103,12 @@ span {
 .organizer {
     padding-bottom: 130px;
 }
+.insta {
+    width: 70px;
+}
+.face {
+    width: 38px;
+}
 .organizer h1{
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.932);
@@ -130,7 +136,7 @@ span {
     flex-direction: row;    
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 62px;
 }
 .caixa {
     position: relative;
