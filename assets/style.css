@@ -134,8 +134,8 @@ span {
 }
 .caixa {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 147px;
+    height: 147px;
     background: none;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@ span {
 
 }
 .caixa::after {
-    filter: blur(10px);
+    filter: blur(8px);
 }
 .collum-div img {
     width: 200px;
